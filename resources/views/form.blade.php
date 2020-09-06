@@ -106,7 +106,7 @@ Formulario
                    img.src = 'data:image/png;base64' + canvas_img_data;
                    document.getElementById("image_signature").innerHTML = '';
                    document.getElementById('image_signature').appendChild(img);
-                   $('#signArea').signaturePad().clearCanvas();
+                  // $('#signArea').signaturePad().clearCanvas();
                    
                    $.ajax({
                        url: '{{ asset('save_sign.php ') }}',

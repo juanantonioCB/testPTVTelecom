@@ -28,6 +28,9 @@ Login
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
 
+        @if ($errors->any())
+            adfasfasfd
+        @endif
 
     </div>
   </div>

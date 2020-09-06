@@ -35,7 +35,7 @@ class LoginController extends Controller
                 return redirect()->route('form');
             }
         } catch (Exception $e) {
-            echo ('errorrrrr');
+            echo ('error');
         }
     }
 }

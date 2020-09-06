@@ -13,9 +13,15 @@ class FormController extends Controller
         $name = $_SESSION['name'];
         $email = $_SESSION['email'];
 
-        return view('Form',[
-            'name'=>$name,
-            'email'=>$email
-            ]);
+        if(session_status()==PHP_SESSION_ACTIVE ){
+            return view('Form',[
+                'name'=>$name,
+                'email'=>$email
+                ]);
+        }else{
+            echo('Inicia sesión por favor');
+        }
+
+        
     }
 }
