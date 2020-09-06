@@ -2,13 +2,12 @@
 <html>
 
 <head>
-    @yield('title')
+    @yield('header')
     <style>
         .active a {
             color: red;
             text-decoration: none;
         }
-
     </style>
 
     <!-- BOOTSTRAP -->
@@ -26,7 +25,11 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">@yield('title')</a>
 
+          
+      </nav>
     @yield('content')
 </body>
 

@@ -637,7 +637,7 @@ function SignaturePad (selector, options) {
       onFormError.apply(self, onErrorArguments)
     }
 
-    return valid
+    return valid;
   }
 
   /**

@@ -14,9 +14,11 @@ use GuzzleHttp\Client;
 |
 */
 
-Route::view('/','welcome')->name('home');
+Route::view('/','login')->name('home');
 
 Route::view('/login','login')->name('login');
+
+Route::post('/','LoginController');
 
 Route::post('login','LoginController');
 Route::get('/form', 'FormController')->name('form');

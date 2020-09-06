@@ -19,10 +19,7 @@ class PdfController extends Controller
             $dompdf->render();
             $dompdf->stream();
 
-        /*return view('pdf',[
-        'name'=> $request->get('name'),
-        'email'=>$request->get('email'),
-        'image'=>$_SESSION['image']]);*/
-     
+           
+
     }
 }
